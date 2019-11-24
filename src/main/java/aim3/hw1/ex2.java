@@ -45,7 +45,7 @@ public class ex2 extends JobMapReduce {
 			// Obtain the parameters sent during the configuration of the job
 			String select = context.getConfiguration().getStrings("select")[0];
 			String[] arrayValues = value.toString().split("\\|");
-			context.write(new Text(Utils.getOrderAttribute(arrayValues, select)), new Text(" "+"|ord"));
+			context.write(new Text(Utils.getOrderAttribute(arrayValues, select)), new Text("asd"+"|ord"));
 		}
 	}
 	
